@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS autocarros (
     velocidade DECIMAL(5,2) CHECK (velocidade BETWEEN 0 AND 100), -- Máximo de 100 km/h
     ocupacao INT CHECK (ocupacao BETWEEN 0 AND 120), -- Máximo de 120 passageiros
     nivel_energia DECIMAL(5,2) CHECK (nivel_energia BETWEEN 0 AND 100 OR nivel_energia IS NULL), -- Percentagem da bateria ou NULL
-    status_operacional VARCHAR(20) CHECK (status_operacional IN ('Em serviço', 'Fora de serviço', 'Manutenção', 'Avariado')) -- Estado do autocarro
+    status_operacional VARCHAR(20) CHECK (status_operacional IN ('Em serviço', 'Fora de serviço', 'Em Manutenção', 'Avariado')) -- Estado do autocarro
 );
 
 -- Tabela das Vias (Ruas e Estradas)
