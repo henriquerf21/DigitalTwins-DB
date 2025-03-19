@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS estacoes (
 - **velocidade DECIMAL(5,2) CHECK (0-100)** → Máximo de 100 km/h, respeitando os limites legais para autocarros em Portugal.
 - **ocupacao INT CHECK (0-120)** → Limite de 120 passageiros, compatível com autocarros articulados.
 - **nivel_energia DECIMAL(5,2) CHECK (0-100) NULL** → Percentagem da bateria (0-100%) ou NULL para autocarros a diesel/gás.
-- **status_operacional CHECK ('Em serviço', 'Fora de serviço', 'Manutenção', 'Avariado')** → Define o estado do autocarro.
+- **status_operacional CHECK ('Em serviço', 'Fora de serviço', 'Em Manutenção', 'Avariado')** → Define o estado do autocarro.
 
  TABELA: vias (Ruas e Estradas)
 ----------------------------------
